@@ -62,7 +62,7 @@ defmodule PhoenixTrello.Board do
   defp slugify(value) do
     value
     |> String.downcase()
-    |> String.replace(~r/[^\w-]+/, "-")
+    |> String.replace(~r/[^\w-]+/u, "-")
   end
 end
 
